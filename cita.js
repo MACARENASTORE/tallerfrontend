@@ -43,7 +43,7 @@ class FormEngine {
         const formData = new FormData(event.target);
         const formValues = Object.fromEntries(formData.entries());
   
-        const response = await fetch('http://localhost:3001/formulario/Cita', {
+        const response = await fetch('http://localhost:3001/Cita', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
